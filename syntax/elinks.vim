@@ -1,8 +1,10 @@
 " Vim syntax file
 " Language:	ELinks configuration file (elinks.conf)
 " Maintainer:	Jonas Fonseca <fonseca@diku.dk>
-" Last Change:	Sep 19th 2002
+" Last Change:	Dec 12th 2002
 " Description:	This file covers elinks version 0.4pre15
+
+" $Id: elinks.vim,v 1.5 2003/01/18 23:36:33 jonas Exp $
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -52,12 +54,13 @@ syn keyword	elinksAction	contained bookmark-manager cookies-load copy-clipboard 
 syn keyword	elinksAction	contained document-info down download download-image edit end enter enter-reload
 syn keyword	elinksAction	contained file-menu find-next find-next-back follow-link forget-credentials
 syn keyword	elinksAction	contained goto-url goto-url-current goto-url-current-link goto-url-home
-syn keyword	elinksAction	contained header-info history-manager home jump-to-link kill-to-bol kill-to-eol
+syn keyword	elinksAction	contained header-info history-manager home jump-to-link keybinding-manager kill-to-bol kill-to-eol
 syn keyword	elinksAction	contained left link-menu lua-console menu next-frame none open-link-in-new-window
 syn keyword	elinksAction	contained open-new-window page-down page-up paste-clipboard previous-frame quit
 syn keyword	elinksAction	contained really-quit reload right save-formatted scroll-down scroll-left
-syn keyword	elinksAction	contained scroll-right scroll-up search search-back toggle-display-images
+syn keyword	elinksAction	contained scroll-right scroll-up search search-back toggle-display-images toggle-numbered-links
 syn keyword	elinksAction	contained toggle-display-tables toggle-html-plain unback up view-image zoom-frame
+syn keyword	elinksAction	contained options-manager abort-connection resume-download add-bookmark-link
 
 " Include statements
 syn match	elinksInclude	/^\s*include\s/ skipwhite nextgroup=elinksValue
